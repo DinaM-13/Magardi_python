@@ -2,9 +2,16 @@
 Домашнее задание №1
 Функции и структуры данных
 """
+def power_numbers(numbers):
+    result = []
+    for number in numbers:
+        result.append(number ** 2)
+    return result
 
+list1 = [1, 3, 4]
+g = power_numbers(list1)
+print(g)
 
-def power_numbers():
     """
     функция, которая принимает N целых чисел,
     и возвращает список квадратов этих чисел
