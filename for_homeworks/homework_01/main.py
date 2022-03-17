@@ -19,7 +19,7 @@ print(g)
 #     <<< [1, 4, 25, 49]
 #     """
 
-
+from sympy import *
 # filter types
 ODD = "odd"
 EVEN = "even"
