@@ -19,14 +19,19 @@ print(g)
 #     <<< [1, 4, 25, 49]
 #     """
 
-from sympy import *
+
 # filter types
 ODD = "odd"
 EVEN = "even"
 PRIME = "prime"
 
 def is_prime(number):
-    return isprime(number)
+    if number==2 or number==3: return True
+    if number%2==0 or number<2: return False
+    for i in range(3, int(number**0.5)+1, 2):
+        if number%i==0:
+            return False
+    return True
 
 t = None
 def filter_numbers(numbers, t):
